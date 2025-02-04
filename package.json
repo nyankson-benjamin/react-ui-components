@@ -1,7 +1,7 @@
 {
   "name": "ts-react-ui-kit",
   "private": false,
-  "version": "0.0.8",
+  "version": "0.0.7",
   "type": "module",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
@@ -14,8 +14,7 @@
     }
   },
   "files": [
-    "/dist",
-    "src/styles/tailwind.css"
+    "/dist"
   ],
   "publishConfig": {
     "access": "public"

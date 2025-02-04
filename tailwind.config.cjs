@@ -1,6 +1,5 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  prefix: "ui-", // Adds a prefix to all Tailwind classes (e.g., `ui-bg-blue-500`)
 
   theme: {
     extend: {

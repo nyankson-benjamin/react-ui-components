@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import AlertContainer from "./components/Alerts/stacked/AlertsContainer";
 import { Alert } from "./components/Alerts";
 import { useAlerts } from "./hooks";
+import { Button } from "./components";
 
 const App: React.FC = () => {
 
@@ -13,6 +14,7 @@ const App: React.FC = () => {
       <AlertContainer alerts={alerts} removeAlert={removeAlert} />
 <div className="flex items-center justify-between">
 <p>hello</p>
+<Button>Heloooo</Button>
 <p>hello</p>
 </div>
       <button onClick={() => setShowAlert(!showAlert)}>show</button>

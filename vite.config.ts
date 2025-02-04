@@ -2,8 +2,6 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import dts from "vite-plugin-dts";
 import path from "path";
-import tailwindcss from "tailwindcss";
-import autoprefixer from "autoprefixer";
 
 export default defineConfig({
   build: {
@@ -23,15 +21,6 @@ export default defineConfig({
     },
     sourcemap: true,
     emptyOutDir: true,
-    assetsInlineLimit: 0, // Ensure styles are not inlined
   },
-  plugins: [
-    react(),
-    dts(),
-  ],
-  css: {
-    postcss: {
-      plugins: [tailwindcss(), autoprefixer()],
-    },
-  },
+  plugins: [react(), dts()],
 });
