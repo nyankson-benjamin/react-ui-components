@@ -14,7 +14,8 @@
     }
   },
   "files": [
-    "/dist"
+    "/dist",
+    "src/styles/tailwind.css"
   ],
   "publishConfig": {
     "access": "public"

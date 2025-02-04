@@ -23,8 +23,12 @@ export default defineConfig({
     },
     sourcemap: true,
     emptyOutDir: true,
+    assetsInlineLimit: 0, // Ensure styles are not inlined
   },
-  plugins: [react(), dts()],
+  plugins: [
+    react(),
+    dts(),
+  ],
   css: {
     postcss: {
       plugins: [tailwindcss(), autoprefixer()],
